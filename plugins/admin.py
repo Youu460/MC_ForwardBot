@@ -35,9 +35,9 @@ async def get_stats(bot, message):
 
 @Client.on_message(filters.private & filters.command(["donate", "d"]))
 async def donate(client, message):
-	text = "<b>🥲 Thanks For Showing Interest In Donation! ❤️</b> \n\nIf You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice. \n\n<b>🛍 UPI ID:</b> <code>yash822208@oksbi</code>"
+	text = "<b>🥲 Thanks For Showing Interest In Donation! ❤️</b> \n\nIf You Like My Bots & Projects, You Can support Me And Share Bots. \n\n<b>🖥️ Developer:</b> <code>you LEO MC</code>"
 	keybord = InlineKeyboardMarkup([
-        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/innocent_babe_dead"), 
+        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/Leomc_bot"), 
         			InlineKeyboardButton("✖️ Close",callback_data = "close_btn") ]])
 	await message.reply_text(text = text,reply_markup = keybord)
 
